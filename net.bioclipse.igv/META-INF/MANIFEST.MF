@@ -4,7 +4,9 @@ Bundle-Name: Igv
 Bundle-SymbolicName: net.bioclipse.igv; singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: net.bioclipse.igv.Activator
-Export-Package: net.bioclipse.igv, net.bioclipse.igv.business
+Export-Package: net.bioclipse.igv,
+ net.bioclipse.igv.business,
+ net.bioclipse.igv.editors
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  net.bioclipse.core,
