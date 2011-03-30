@@ -54,12 +54,12 @@ public class IgvEditor extends EditorPart {
 
           java.awt.Frame awtFrame = SWT_AWT.new_Frame(composite);
           
-          com.jidesoft.utils.Lm.verifyLicense("The Broad Institute, MIT", "Gene Pattern",
-          "D.DQSR7z9m6fxL1IqWZ6svQFmE6vj3Q");
+          com.jidesoft.utils.Lm.verifyLicense("The Broad Institute, MIT", "Gene Pattern", "D.DQSR7z9m6fxL1IqWZ6svQFmE6vj3Q");
 
           IGVMainFrame igvMainFrame = IGVMainFrame.getInstance();
-          
           awtFrame.add(igvMainFrame);
+          String[] args = {};
+          igvMainFrame.startUp(args);
       }
       public void init(IEditorSite site, IEditorInput input) {
          setSite(site);
