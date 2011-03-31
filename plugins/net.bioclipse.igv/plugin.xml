@@ -9,16 +9,16 @@
             id="net.bioclipse.igv.business.IgvManager">
       </scriptContribution>
    </extension>
-
-   <extension
-         point="org.eclipse.ui.editors">
-	   <editor
-	      name="IGV Editor"
-	      extensions="igv"
-	      icon="icons/sample.gif"
-	      class="net.bioclipse.igv.editors.IgvEditor"
-	      id="net.bioclipse.igv.editors.IgvEditor">
-	   </editor>
-   </extension>
    
+   <extension
+   		point="org.eclipse.ui.editors">
+    <editor
+      name="IGV Editor"
+      extensions="igv"
+      icon="icons/sample.gif"
+      class="net.bioclipse.igv.editors.IgvEditor"
+      id="net.bioclipse.igv.editors.IgvEditor">
+  	 </editor>
+   		</extension>
+
 </plugin>

@@ -3,7 +3,7 @@
       id="net.bioclipse.igv_feature"
       label="Igv_feature"
       version="1.0.0.qualifier"
-      provider-name="The Bioclipse team">
+      provider-name="The Bioclipse Team">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -17,19 +17,8 @@
       [Enter License Description here.]
    </license>
 
-   <requires>
-      <import feature="net.bioclipse.core_feature" version="2.4.0.20100709"/>
-   </requires>
-
    <plugin
          id="net.bioclipse.igv"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.broadinstitute.igv"
          download-size="0"
          install-size="0"
          version="0.0.0"
