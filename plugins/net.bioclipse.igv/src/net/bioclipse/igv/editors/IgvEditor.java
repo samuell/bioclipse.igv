@@ -1,10 +1,5 @@
 package net.bioclipse.igv.editors;
 
-import javax.swing.JRootPane;
-
-import org.broad.igv.ui.IGVMainFrame;
-import org.broad.igv.ui.panel.IGVPanel;
-import org.broad.igv.ui.panel.MainPanel;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.awt.SWT_AWT;
@@ -59,14 +54,9 @@ public class IgvEditor extends EditorPart {
 //        java.awt.Panel awtPanel 
 //            = new java.awt.Panel(new java.awt.BorderLayout());
         
-        IGVMainFrame igvMainFrame = IGVMainFrame.getInstance();
-        JRootPane igvRootPane = igvMainFrame.getRootPane();
-
-        
         String[] args = {};
-        igvMainFrame.startUp(args);
+        org.broad.igv.ui.Main.open(awtFrame, args); 
         
-        awtFrame.add(igvRootPane);
     }
     public void init(IEditorSite site, IEditorInput input) {
        setSite(site);
